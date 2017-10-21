@@ -1,4 +1,6 @@
-﻿CREATE DATABASE EcoInteriorDb;
+﻿/*Teamname : Eco-Interior Group Members: Jamie Traverso, Gyda Sumadi, and Eshika Agarwal */
+
+CREATE DATABASE EcoInteriorDb;
 GO
 
 USE EcoInteriorDb;
@@ -68,10 +70,6 @@ ALTER TABLE Product ADD CONSTRAINT FK_Product_Supplier
 FOREIGN KEY (SupplierID) REFERENCES Supplier(SupplierID);
 GO
 
-
--- We will use designer view to create another relationship: the second FK in CourseEnrollment
-
-
 -- Add Customer Information
 INSERT INTO Customer(CustomerID, FirstName, LastName, StreetAddress, city, State, ZipCode, Email, PhoneNumber) VALUES 
 (1000,'David','Smith','100 Christopher Street','Manhattan','NY','10014','dsmith1@gmail.com','617-971-6827'),
@@ -115,8 +113,6 @@ INSERT INTO Product(ProductID, ProductName, Description, ProductCost, Weight, Ca
 (1509, 'Jasmeen Large Bookshelf', 'Designed Elegantly with hand-waxed wood', '699', '65', 'Cabinets and Shelving', 'Wheat', '90', '45', '20', 'Indian Rosewood', 19876),
 (1510, 'Oceanic Coffee Table', 'Reclaimed wood', '809', '25', 'Tables','Brown','17', '27', '47','Marine-grade wood', 12543);
 GO
-
-/*Teamname : Eco-Interior Group Members: Jamie Traverso, Gyda Sumadi, and Eshika Agarwal */
 
 -- Add OrderHeader Information
 INSERT INTO OrderHeader(OrderID, OrderDate, ShipDate,OrderStatus, Subtotal, TotalDue, ShippingAmount, CustomerID) VALUES 

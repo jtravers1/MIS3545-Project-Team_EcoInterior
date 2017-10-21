@@ -116,6 +116,8 @@ INSERT INTO Product(ProductID, ProductName, Description, ProductCost, Weight, Ca
 (1510, 'Oceanic Coffee Table', 'Reclaimed wood', '809', '25', 'Tables','Brown','17', '27', '47','Marine-grade wood', 12543);
 GO
 
+/*Teamname : Eco-Interior Group Members: Jamie Traverso, Gyda Sumadi, and Eshika Agarwal */
+
 -- Add OrderHeader Information
 INSERT INTO OrderHeader(OrderID, OrderDate, ShipDate,OrderStatus, Subtotal, TotalDue, ShippingAmount, CustomerID) VALUES 
 (7654,'2017-01-05','2017-01-10','Processed',15200,15900,750, 1009),
